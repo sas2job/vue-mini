@@ -18,7 +18,8 @@ new Vue({
     car: cars[0],
     selectedCarIndex: 0,
     phoneVisibility: false,
-    search: ''
+    search: '',
+    modalVisibility: false
   },
   methods: {
     selectCar: function(index) {
