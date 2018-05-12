@@ -10,3 +10,52 @@
 .modal {
   display: block;
 }
+
+/*Animations*/
+
+/* При появлении элемента*/
+/*  *-enter  */ /*  *-leave  */
+
+/* класс висит на элементе когда его нужно анимировать*/
+/*  *-enter-actives  */  /*  *-enter-leave  */
+
+/* Куда стремится элемент*/
+/*  *-enter-to  */  /*  *-leave-to  */
+
+.phone-enter-active, .phone-enter-leave {
+  transition: all .5s;
+}
+
+.phone-enter, .phone-leave-to {
+  transform: translateX(50px);
+  opacity: 0;
+}
+
+.modal-enter-active, .modal-enter-leave {
+  transition: all .5s;
+}
+
+.modal-enter, .modal-leave-to {
+  transform: translateY(-100px);
+}
+
+.fade-enter-active {
+  animation: .75s fade forwards
+}
+
+.fade-leave-active {
+  animation: .75s fade reverse
+}
+
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: .5;
+  }
+}
